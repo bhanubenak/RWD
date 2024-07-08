@@ -1,0 +1,695 @@
+/*Reset CSS Starts*/
+a,
+abbr,
+acronym,
+address,
+applet,
+big,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+td,
+th {
+    text-align: left;
+    font-weight: 400;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover {
+    outline: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+
+
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*Reset CSS* Ends*/
+
+@font-face {
+    font-family: Fira Sans;
+    src: url(../fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: FiraSans_Bold;
+    src: url(../fonts/FiraSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Fira Sans Heavy;
+    src: url(../fonts/FiraSans-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Fira Sans Ultra;
+    src: url(../fonts/FiraSans-Ultra.ttf);
+}
+
+a {
+    color: #000;
+    text-decoration: dashed;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+:root {
+    --primary-clr: #000;
+    --secondary-clr: #a2a2a2;
+    --ternery-clr: #222222;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: Fira Sans;
+}
+
+/* Header styling starts */
+nav {
+    position: relative;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav_left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav .nav_left .ham_menu,
+nav .nav_left .ham_menu:before,
+nav .nav_left .ham_menu:after {
+    width: 1.3rem;
+    height: 3px;
+    border-radius: 12px;
+    position: relative;
+    background-color: #000000;
+}
+
+.ham_menu {
+    margin-inline-end: 1rem;
+}
+
+nav .nav_left .ham_menu:before,
+nav .nav_left .ham_menu:after {
+    content: "";
+    position: absolute;
+}
+
+nav .nav_left .ham_menu:before {
+    top: 7px;
+}
+
+nav .nav_left .ham_menu:after {
+    bottom: 7px;
+}
+
+nav div.nav_left div.logo img {
+    width: 5.8rem;
+}
+
+.shop_icons {
+    display: flex;
+    gap: 0.3rem;
+}
+
+nav .nav_right .search {
+    background: url('../images/extracted/search.png') no-repeat;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+nav .nav_right .cart {
+    background: url('../images/extracted/shopping-bag.png') no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 19px;
+}
+
+/* Header styling ends */
+
+
+/* main styling starts */
+.page_wrapper {
+    padding-inline: 1.875rem;
+    padding-block: 2.625rem;
+}
+
+.hero_banner {
+    background: url('../images/hero-banner.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 24.375rem;
+}
+
+.hero_banner .hero_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero_banner .hero_contents p {
+    color: var(--secondary-clr);
+    font-family: Fira Sans;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+}
+
+.hero_banner .hero_contents h3 {
+    color: var(--primary-clr);
+    font-family: Fira Sans Ultra;
+    font-size: 1.8125rem;
+    line-height: 2.1875rem;
+    text-align: center;
+    margin-block: 0.625rem;
+}
+
+.hero_contents .shop_btns {
+    display: flex;
+    gap: 0.6875rem;
+}
+
+.shop_btns button {
+    border: none;
+    width: 6.4375rem;
+    height: 2.6875rem;
+    border-radius: 0.3rem;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: Fira Sans;
+    font-weight: bold;
+    background-color: var(--ternery-clr);
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+}
+
+.text {
+    margin-block-start: 4.75rem;
+    margin-block-end: 1.875rem;
+}
+
+.text p {
+    font-size: 1.1875rem;
+    line-height: 1.4375rem;
+    color: var(--primary-clr);
+    font-family: Fira Sans;
+    text-align: center;
+}
+
+/* .middle_content {} */
+
+.middle_content .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle_content .flex .col {
+    background: url('../images/summer-1.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 27.31rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle_content .flex .col.col-2 {
+    background: url('../images/summer-2.png') no-repeat;
+    background-size: cover;
+}
+
+.middle_content .flex .col.col-3 {
+    background: url('../images/summer-3.png') no-repeat;
+    background-size: cover;
+}
+
+.middle_content .flex p {
+    color: var(--primary-clr);
+    font-family: Fira Sans;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+}
+
+.middle_content .flex .col.col-3 p {
+    color: #fff;
+}
+
+/* CAROUSEL STYLING starts here*/
+#carousel-1 .item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel_container {
+    margin-block-start: 3.5rem;
+}
+
+#carousel-1 .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-nav button {
+    border: none;
+    outline: none;
+}
+
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+.owl-prev {
+    left: 1%;
+}
+
+.owl-next {
+    right: 1%;
+}
+
+#carousel-1>div.owl-nav.disabled>button.owl-next>span,
+#carousel-1>div.owl-nav.disabled>button.owl-prev>span {
+    font-size: 2rem;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    border-radius: 50%;
+}
+
+/* CAROUSEL STYLING ends here*/
+
+
+.middle_content.middle_content_2 div {
+    gap: 1.75rem;
+}
+
+.middle_content.middle_content_2 .col {
+    flex-direction: column;
+}
+
+.middle_content.middle_content_2 .col-1 {
+    background: url('../images/extracted/res-clearrance-1.png') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.middle_content.middle_content_2 .col-2 {
+    background: url('../images/extracted/res-clearrance-2.png') no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+}
+
+.middle_content.middle_content_2 .col button {
+    color: #000;
+    background-color: #fff;
+    font-size: 1.125rem;
+}
+
+.middle_content.middle_content_2 .flex p {
+    color: #fff;
+    padding-block-end: 1rem;
+}
+
+/* carousel - 2 styling starts here */
+.product_carousel .item .product_img {
+    background: url('../images/green.png') no-repeat;
+    background-size: contain !important;
+    width: 10.175rem;
+    height: 16.5625rem;
+}
+
+.product_carousel .prod_2 .product_img {
+    background: url('../images/gold.png') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_3 .product_img {
+    background: url('../images/blue.png') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_4 .product_img {
+    background: url('../images/brown.jpg') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_5 .product_img {
+    background: url('../images/white.png') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_6 .product_img {
+    background: url('../images/white-red.png') no-repeat !important;
+    background-size: cover !important;
+}
+
+.product_carousel .prod_7 .product_img {
+    background: url('../images/brown.jpg') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_8 .product_img {
+    background: url('../images/blue.png') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_9 .product_img {
+    background: url('../images/gold.png') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_10 .product_img {
+    background: url('../images/green.png') no-repeat;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_11 .product_img {
+    background: url('../images/brown.jpg') no-repeat !important;
+    background-size: contain !important;
+}
+
+.product_carousel .prod_12 .product_img {
+    background: url('../images/white-red.png') no-repeat !important;
+    background-size: cover !important;
+}
+
+.product_carousel .item {
+    padding: 0px 0;
+    margin: 10px;
+    color: #111111;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.product_carousel .owl-nav.disabled {
+    display: none;
+}
+
+.prod_name {
+    color: var(--secondary-clr);
+    font-size: 1rem;
+    line-height: 1.1875rem;
+}
+
+.prod_price {
+    position: relative;
+    top: 10px;
+    font-family: 'Fira Sans';
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+}
+
+.discount {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.discount p {
+    text-decoration: line-through;
+    color: red;
+    font-family: FiraSans_Bold;
+    font-weight: bold;
+}
+
+#carousel-2>div.owl-nav>button {
+    display: none;
+}
+
+/* carousel - 2 styling ends here */
+
+.text.unsubscribe {
+    margin-block-start: 1.875rem;
+}
+
+.text.unsubscribe p {
+    font-size: 0.875rem;
+    color: var(--secondary-clr);
+}
+
+.error {
+    color: red;
+}
+
+.unsubscribe_form input {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid var(--secondary-clr);
+    border-radius: 0.8rem;
+    margin-block-end: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Fira Sans';
+    padding-inline: 1rem;
+}
+
+.unsubscribe_form input:focus-visible {
+    color: inherit;
+}
+
+.unsubscribe_form input:focus {
+    outline: none;
+}
+
+/* #emailForm > input[type=submit]:nth-child(3) */
+.unsubscribe_form input[type=submit] {
+    font-family: 'FiraSans_Bold';
+    background: var(--primary-clr);
+    color: #fff;
+}
+
+/* main styling ends */
+
+/* Footer styling starts here */
+.line-break {
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-clr);
+    margin-block-end: 1.5625rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1.875rem;
+    padding-block: 1.75rem;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links>div {
+    margin-block-end: 1.5rem;
+}
+
+.footer_links a {
+    color: inherit;
+}
+
+.footer_links>div>* {
+    text-align: center;
+}
+
+.footer_links h4 {
+    color: var(--primary-clr);
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    font-family: 'FiraSans_Bold';
+    margin-block-end: 1.25rem;
+}
+
+.footer_links p {
+    color: var(--secondary-clr);
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    font-family: 'Fira Sans';
+    padding-block-end: 0.8125rem;
+}
+
+.footer_logo_links p {
+    color: var(--secondary-clr);
+}
+
+.footer_logo_links p span {
+    font-family: 'FiraSans_Bold';
+    font-size: .9rem;
+    color: var(--primary-clr);
+}
+
+/* Footer styling ends here */
