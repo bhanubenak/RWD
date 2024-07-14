@@ -44,7 +44,7 @@ $(document).ready(function () {
                 nav: true
             },
             321: {
-                items: 1,
+                items: 2,
                 nav: true
             },
             600: {
