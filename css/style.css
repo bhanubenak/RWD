@@ -447,10 +447,6 @@ nav .nav_right .cart {
     border-radius: 50%;
 }
 
-/* deleting cloned items from owl carousel */
-.owl-item.cloned {
-    display: none;
-}
 /* CAROUSEL STYLING ends here*/
 
 
