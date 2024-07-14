@@ -485,8 +485,8 @@ nav .nav_right .cart {
 .product_carousel .item .product_img {
     background: url('../images/green.png') no-repeat;
     background-size: contain !important;
-    width: 10.175rem;
-    height: 16.5625rem;
+    width: 9rem;
+    height: 16rem;
 }
 
 .product_carousel .prod_2 .product_img {
