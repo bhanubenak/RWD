@@ -95,7 +95,7 @@ $(document).ready(function () {
 
 $(document).ready(function(){
     $('.owl-item.cloned').css({"display": "none !important"})
-})
+}, 70)
 
 
 
